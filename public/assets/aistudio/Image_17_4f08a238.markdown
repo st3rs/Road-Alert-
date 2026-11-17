@@ -1,0 +1,203 @@
+---
+name: Siam Traffic Vision
+colors:
+  surface: '#f6fafe'
+  surface-dim: '#d6dade'
+  surface-bright: '#f6fafe'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f0f4f8'
+  surface-container: '#eaeef2'
+  surface-container-high: '#e4e9ed'
+  surface-container-highest: '#dfe3e7'
+  on-surface: '#171c1f'
+  on-surface-variant: '#3e4850'
+  inverse-surface: '#2c3134'
+  inverse-on-surface: '#edf1f5'
+  outline: '#6e7881'
+  outline-variant: '#bec8d2'
+  surface-tint: '#006591'
+  primary: '#006591'
+  on-primary: '#ffffff'
+  primary-container: '#0ea5e9'
+  on-primary-container: '#003751'
+  inverse-primary: '#89ceff'
+  secondary: '#006c49'
+  on-secondary: '#ffffff'
+  secondary-container: '#6cf8bb'
+  on-secondary-container: '#00714d'
+  tertiary: '#b91a24'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#ff6c66'
+  on-tertiary-container: '#6e000c'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#c9e6ff'
+  primary-fixed-dim: '#89ceff'
+  on-primary-fixed: '#001e2f'
+  on-primary-fixed-variant: '#004c6e'
+  secondary-fixed: '#6ffbbe'
+  secondary-fixed-dim: '#4edea3'
+  on-secondary-fixed: '#002113'
+  on-secondary-fixed-variant: '#005236'
+  tertiary-fixed: '#ffdad7'
+  tertiary-fixed-dim: '#ffb3ad'
+  on-tertiary-fixed: '#410004'
+  on-tertiary-fixed-variant: '#930013'
+  background: '#f6fafe'
+  on-background: '#171c1f'
+  surface-variant: '#dfe3e7'
+typography:
+  display-lg:
+    fontFamily: Inter
+    fontSize: 40px
+    fontWeight: '800'
+    lineHeight: 48px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Inter
+    fontSize: 30px
+    fontWeight: '700'
+    lineHeight: 38px
+    letterSpacing: -0.01em
+  headline-md:
+    fontFamily: Inter
+    fontSize: 24px
+    fontWeight: '700'
+    lineHeight: 32px
+  headline-sm:
+    fontFamily: Inter
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+  body-lg:
+    fontFamily: Inter
+    fontSize: 18px
+    fontWeight: '500'
+    lineHeight: 26px
+  body-md:
+    fontFamily: Inter
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+  body-sm:
+    fontFamily: Inter
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+  label-lg:
+    fontFamily: Inter
+    fontSize: 15px
+    fontWeight: '700'
+    lineHeight: 20px
+    letterSpacing: 0.01em
+  label-md:
+    fontFamily: Inter
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 18px
+    letterSpacing: 0.02em
+  label-sm:
+    fontFamily: Inter
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 16px
+    letterSpacing: 0.04em
+  metric-nav:
+    fontFamily: Inter
+    fontSize: 36px
+    fontWeight: '800'
+    lineHeight: 40px
+    letterSpacing: -0.03em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-sm: 0.75rem
+  gutter-lg: 1.5rem
+  margin: 1rem
+  margin-sm: 0.75rem
+  margin-lg: 1.5rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system targets urban commuters, delivery fleets, motorcycle riders, and highway travelers across Thailand. The core emotional imperative is absolute split-second legibility, situational composure, and immediate hazard awareness under harsh outdoor tropical sunlight and dynamic cockpit conditions.
+
+The aesthetic fuses **Modern High-Contrast Functionalism** with tactical spatial utility. The interface is engineered for glanceability: zero non-essential decorative ornaments, high visual hierarchy, punchy chromatic alerts, and tactile, high-confidence interactive surfaces. Every component must be decipherable in under 300 milliseconds from dashboard mounts.
+
+## Colors
+
+The palette is calibrated strictly for rapid cognitive categorization under bright ambient light:
+
+- **Neutral Canvas (`#F1F5F9`):** Soft slate map canvas providing a non-glare, eye-resting foundation that allows high-contrast cards and route overlays to pop.
+- **Surface Pure (`#FFFFFF`):** High-luminance crisp white utilized for top-tier cards, bottom sheets, search overlays, and floating control clusters.
+- **Primary Sky Blue (`#0EA5E9`):** Represents dynamic navigation, route guidance polyline accents, GPS locators, and environmental water/monsoon flood warnings.
+- **Secondary Emerald Green (`#10B981`):** Active status, verified free-flowing routes, clear passage, and confirmation toasts.
+- **Tertiary Crimson Red (`#EF4444`):** Urgent alerts including multi-vehicle collisions, stalled vehicles, lane closures, and verified checkpoint warnings.
+- **Semantic Amber Orange (`#F59E0B`):** Heavy congestion, ongoing road resurfacing, construction detours, and moderate delays.
+- **On-Surface Ink (`#0F172A`):** Deep obsidian slate applied to primary text, ensuring an AAA contrast ratio against `#FFFFFF` and `#F1F5F9`.
+- **Subdued Ink (`#475569`):** Slate-600 reserved for secondary metrics, distance offsets, and metadata.
+
+## Typography
+
+Typography prioritizes swift scanning for bilingual Thai-Latin scripts. While the system renders Latin text via `Inter`, runtime environments map seamlessly to `Prompt` for Thai glyphs, ensuring matched vertical metrics, open apertures, and balanced x-heights.
+
+- **Glance Metric (`metric-nav`):** Reserved for remaining distance (e.g., `450 m`, `12 km`) and ETA numbers.
+- **Directional Headers (`headline-md`, `headline-sm`):** Bold, unambiguous street names and maneuver instructions.
+- **Alert Labels (`label-lg`, `label-sm`):** All-caps or heavy-weight status markers paired with incident icons to guarantee readability during vehicle vibration.
+
+## Layout & Spacing
+
+The layout is built on an adaptive fluid spatial container anchored over an interactive full-screen map viewport.
+
+- **Mobile Viewport (0–639px):** Margins default to `1rem` (`16px`) from device screen borders. Navigation status banners pin to the top safe area; route summary and crowd incident reporting actions reside in an anchored bottom sheet or floating modular deck with bottom clearance for gesture bars.
+- **Tablet / In-Car Mount / Landscape (640px+):** Employs dual-column split overlay cards. Turn-by-turn guidance pins to a fixed left card (`380px` width) while active alerts, hazard feeds, and speed governors dock to the bottom right.
+- **Touch Target Enforcements:** Interactive elements adhere to an absolute minimum touch zone of `48x48px` (ideally `56x56px` for primary hazard reporting buttons) to account for vehicle instability and one-handed thumb interaction.
+
+## Elevation & Depth
+
+Visual hierarchy uses crisp boundaries combined with low-diffusion ambient drop shadows to isolate actionable data from busy map textures beneath.
+
+- **Level 0 (Map Floor):** `#F1F5F9` canvas layer holding vector roads, building footprints, and water bodies.
+- **Level 1 (Inline Trackers & Chips):** Semi-elevated components with a subtle hairline outline (`1px solid #E2E8F0`) and ambient shadow: `0 2px 4px -1px rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04)`.
+- **Level 2 (Turn Direction & Incident Cards):** Floating `#FFFFFF` panels featuring crisp definition against map lines: `0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03)`.
+- **Level 3 (Modal Alerts & Bottom Drawers):** High-urgency overlay surfaces: `0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.04)`.
+
+## Shapes
+
+The design system employs a **Rounded** geometry (`roundedness: 2`). Base containers, map action buttons, and hazard alert cards feature `0.5rem` (`8px`) corners, scaling to `1rem` (`16px`) for floating notification sheets and bottom interaction decks (`rounded-lg`).
+
+This maintains a modern, ergonomic visual flow while preventing corner clipping on dense telemetry data. Circular geometries (`9999px`) are reserved strictly for FABs (speed indicators, compass re-center, voice toggle) and circular report icon triggers.
+
+## Components
+
+### Action Buttons
+- **Primary Direction Button:** Solid `#0EA5E9` background with `#FFFFFF` text (`label-lg`), minimum height `52px`, rounded-lg (`16px`), flex-centered with directional arrow iconography.
+- **Emergency Report Button:** Vibrant circular trigger (`56x56px`) with high contrast amber/crimson glyphs, providing prominent haptic and visual feedback.
+
+### Status Badges & Chips
+- **Accident / Police Checkpoint:** `#FEE2E2` container with `#EF4444` solid border and bold `#991B1B` text.
+- **Flooding / Rain Warning:** `#E0F2FE` container with `#0EA5E9` solid border and `#075985` text.
+- **Congestion / Construction:** `#FEF3C7` container with `#F59E0B` solid border and `#92400E` text.
+- **Clear Route:** `#D1FAE5` container with `#10B981` solid border and `#065F46` text.
+
+### Navigation Header Card
+- High-contrast pure white (`#FFFFFF`) card fixed `16px` below top status bar. Contains bold turn iconography (`40x40px`), lane assistance diagrams, next-turn text (`headline-sm`), and distance to turn (`headline-lg`).
+
+### Incident Report Bottom Sheet
+- Draggable surface containing a 3-column grid of large touch cards (`80x80px` minimum target) with bold graphic symbols for fast selection: "Accident", "Flood", "Police", "Traffic Jam", "Hazard", "Closure".
+
+### Speedometer & Limit Pill
+- Dual-ring display: current speed rendered in `metric-nav` encased in a high-contrast white card, juxtaposed against a circular red-bordered speed limit badge.
